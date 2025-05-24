@@ -1,5 +1,16 @@
 # NewTools – Bash Helper Template
 
+> **Base platform**: NewTools is the companion utility toolkit for the
+> [ocaml-gpt](https://github.com/dakotamurphyucf/ocaml-gpt.git) project.  While
+> the helpers can be reused in any Bash environment, they are shipped and kept
+> up-to-date in the ocaml-gpt repository.  If you cloned this directory on its
+> own and wish to explore the full platform, fetch it with:
+>
+> ```bash
+> git clone https://github.com/dakotamurphyucf/ocaml-gpt.git
+> ```
+
+
 This directory provides a **minimal, copy-paste-ready template** for creating
 re-usable Bash helpers.  The structure is small on purpose – just enough to
 encourage good habits (library vs. executable, `set -euo pipefail`, etc.).
