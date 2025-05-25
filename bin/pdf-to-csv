@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# ---------------------------------------------------------------------------
+#  NewTools/bin/pdf-to-csv
+# ---------------------------------------------------------------------------
+# Thin wrapper that exposes the pdf_to_csv() function as a standalone command.
+# Usage mirrors the other wrappers: first argument is the input PDF, optional
+# second argument is the output CSV.  See `pdf_to_csv --help` for details.
+# ---------------------------------------------------------------------------
+
+# Resolve absolute path to this script even if invoked via a symlink.
+this_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+
+# shellcheck source=../scripts/poppler_helpers.sh
+source "$this_dir/../scripts/poppler_helpers.sh"
+
+# Forward all arguments verbatim to the library function.
+pdf_to_csv "$@"
+
