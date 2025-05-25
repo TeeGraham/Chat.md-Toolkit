@@ -34,7 +34,7 @@ NewTools/
 │   ├── pdf-to-csv          # Wrapper → pdf_to_csv()
 │   ├── docx-to-pdf         # Wrapper → docx_to_pdf()
 │   └── docx-to-md          # Wrapper → docx_to_markdown()
-└── README-CHMod.md         # What you are reading now
+└── README.md         # What you are reading now
 ```
 
 ## 1  Giving Exec Permissions (`chmod`)
